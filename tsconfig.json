@@ -11,7 +11,11 @@
       "jsx": "react",
       "allowSyntheticDefaultImports": true,
       "keyofStringsOnly": true,
-      "skipLibCheck": true
+      "skipLibCheck": true,
+      "baseUrl": "./src",
+      "paths": {
+        "~/*": ["*"]
+      }
     },
     "typeRoots": ["node_modules/@types", "src/@type"],
     "exclude": [

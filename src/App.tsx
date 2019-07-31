@@ -1,15 +1,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Styled from 'styled-components';
 
-const Title = Styled.h1`
-  color: red;
-`;
+import Top from './Features/Top';
 
 interface Props {}
 
 const App = ({  }: Props) => {
-  return <Title>Hello World!</Title>;
+  return <Top />;
 };
 
 ReactDOM.render(<App />, document.getElementById('app'));
