@@ -14,6 +14,9 @@ const Top = ({ match, history, location }: Props) => {
       <Link to="/page1">Page 1</Link>
       <Link to="/page2">Page 2</Link>
       <Title label="Hello World!" />
+      <img src={require('~/Assets/Images/logo.png')} />
+      <img src={require('~/Assets/Images/ic_account.png')} />
+      <img src={require('~/Assets/Images/ic_account.svg')} />
     </div>
   );
 };
