@@ -5,17 +5,15 @@ import Title from '~/Components/Title';
 
 interface Props extends RouteComponentProps {}
 
-const Top = ({ match, history, location }: Props) => {
-  console.log(match);
-  console.log(history);
-  console.log(location);
+const Page2 = ({ history }: Props) => {
   return (
     <div>
+      <a onClick={history.goBack}>Previous Page</a>
+      <Link to="/">Top</Link>
       <Link to="/page1">Page 1</Link>
-      <Link to="/page2">Page 2</Link>
-      <Title label="Hello World!" />
+      <Title label="Page 2" />
     </div>
   );
 };
 
-export default Top;
+export default Page2;
